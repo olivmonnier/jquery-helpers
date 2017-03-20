@@ -1,0 +1,18 @@
+{
+  "name": "jquery-helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "concat": "concat-glob-cli -f ./src/**/*.js -o dist/jquery.helpers.js",
+    "uglify": "uglifyjs dist/jquery.helpers.js -o dist/jquery.helpers.min.js",
+    "build": "npm run concat && npm run uglify"
+  },
+  "keywords": [],
+  "author": "olivmonnier",
+  "license": "ISC",
+  "devDependencies": {
+    "concat-glob-cli": "^0.1.0",
+    "uglify-js": "^2.8.14"
+  }
+}
