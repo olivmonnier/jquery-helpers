@@ -1,11 +1,11 @@
 {
-  "name": "jquery-helpers",
+  "name": "jquery-plugins",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "concat": "concat-glob-cli -f ./src/**/*.js -o dist/jquery.helpers.js",
-    "uglify": "uglifyjs dist/jquery.helpers.js -o dist/jquery.helpers.min.js",
+    "concat": "concat-glob-cli -f ./src/**/*.js -o dist/jquery.plugins.js",
+    "uglify": "uglifyjs dist/jquery.plugins.js -o dist/jquery.plugins.min.js",
     "build": "npm run concat && npm run uglify"
   },
   "keywords": [],
@@ -13,6 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "concat-glob-cli": "^0.1.0",
-    "uglify-js": "^2.8.14"
+    "uglify-js": "^3.5.13"
   }
 }
